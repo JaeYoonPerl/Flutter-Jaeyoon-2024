@@ -10,4 +10,9 @@ var myHome ="내집이야";
 //출력은 print()
 print(myHome);
 // cs언어는 마지막 세미콜론 필수
+
+// var 선언 변수는 재할당 가능할까?
+// myHome =32;
+// 처음에 넣은 데이터 형과 다른형은 할당불가
+print(myHome);
 }
