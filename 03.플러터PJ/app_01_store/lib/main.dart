@@ -1,3 +1,5 @@
+// import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 // 보통 material.dart를 가져다가 사용함
 
@@ -110,7 +112,29 @@ class StorePage extends StatelessWidget {
                   ),
               ],
             ),
-            )
+            ),
+            // 하단 이미지 추가하기 
+            // Expanded 위젯 - flex 속성이 있어서 등분할 함]
+            Expanded(
+              child: Image.asset(
+                "bag.jpeg", // 이미지경로명
+                fit:BoxFit.cover, // 이미지 박스채움
+              ),
+              
+              ),
+              // 이미지 사이간격은 빈박스로 조정함
+              // 가로간격은 width속성, 세로간격은 height속성사용
+              SizedBox(
+                height: 5.0,
+              ),
+            Expanded(
+              child: Image.asset(
+                "cloth.jpeg", // 이미지경로명
+                fit:BoxFit.cover, // 이미지 박스채움
+              ),
+              
+              ),
+
           ],
         ),
       ),
